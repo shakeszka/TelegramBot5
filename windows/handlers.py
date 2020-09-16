@@ -16,7 +16,7 @@ async def start_bot(message : types.Message):
     first_name = message.from_user.first_name
     chat_id = message.from_user.id
 
-    link = 'C:\\Users\\shake\\OneDrive\\Рабочий стол\\python\\TelegramBot2\\sticker\\'
+    link = "C:/Users/shake/OneDrive/Рабочий стол/python/TelegramBotFINAL/stickers/sticker"
 
     sleep(1)
     sti = open(link + 'sticker.webp', 'rb')
@@ -45,7 +45,7 @@ async def start_bot(message : types.Message):
 @dp.message_handler(commands=['info'])
 async def info_bot(message : types.Message):
     random_number = random.randint(1, 15)
-    link = 'C:\\Users\\shake\\OneDrive\\Рабочий стол\\python\\TelegramBot\\stickers\\sticker'
+    link = "C:/Users/shake/OneDrive/Рабочий стол/python/TelegramBotFINAL/stickers/sticker"
     sti = open(link + str(random_number) + '.webp', 'rb')
 
     sleep(1)
